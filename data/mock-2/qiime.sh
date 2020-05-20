@@ -1,16 +1,27 @@
 #!/bin/bash
 
 # Fetch the data
+awk '{if ($0~/.fastq.gz/) {system("wget " $2)}}' dataset-metadata.tsv
 
 # Isolate it into a folder
+mkdir import_to_qiime
 
+mv *.fastq.gz import_to_qiime
 
+cd import_to_qiime
 
+mv mock-forward-read.fastq.gz forward.fastq.gz
+mv mock-reverse-read.fastq.gz reverse.fastq.gz
+mv mock-index-read.fastq.gz barcodes.fastq.gz
 
+cd ..
 
 # Import the data
+qiime tools import --type EMPPairedEndSequences --input-path import_to_qiime/ --output-path reads.qza
 
+qiime demux emp-paired --m-barcodes-file sample-metadata.tsv --m-barcodes-column BarcodeSequence --i-seqs reads.qza --o-per-sample-sequences demux_reads --o-error-correction-details demux_stats --p-rev-comp-mapping-barcodes
 
+qiime demux summarize --p-n 10000 --i-data demux_reads.qza --o-visualization qual_viz
 
 qiime deblur denoise-16S --i-demultiplexed-seqs demux_reads.qza --o-representative-sequences rep_seq --o-stats stats --o-table deblur_table --p-trim-length -1
 #Using DADA2 to analyze quality scores of 10 random samples
