@@ -1,4 +1,43 @@
-# mockrobiota
+# mockrobiota + QIIME2
+
+This is a fork of the [mockrobiota](http://caporaso-lab.github.io/mockrobiota/) repository with additional scripts to download the data and process them with QIIME2.
+
+Goals for this fork are to provide an easy entrypoint into the mockrobiota data with a set of working import commands and clustering parameters.
+
+# Processing Status
+
+| Dataset | import/demux | deblur | dada2 |
+|---------|--------|--------|-------|
+| mock-1  | :white_check_mark:    |  :white_check_mark:  |  :white_check_mark:  |
+| mock-2  |  :heavy_check_mark:   |  :white_check_mark:  |  :heavy_check_mark:  |
+| mock-3  |  :heavy_check_mark:   |  :white_check_mark:  |  :white_check_mark:  |
+| mock-4  |  :white_check_mark:   |  :white_check_mark:  |  :white_check_mark:  |
+| mock-5  |  :white_check_mark:   |  :white_check_mark:  |  :white_check_mark:  |
+| mock-6  |  :white_check_mark:   |  :white_check_mark:  |  :white_check_mark:  |
+| mock-7  |  :white_check_mark:   |  :white_check_mark:  |  :white_check_mark:  |
+| mock-8  |  :white_check_mark:   |  :white_check_mark:  |  :white_check_mark:  |
+| mock-9  |  :white_check_mark:   |  :white_check_mark:  |  :white_check_mark:  |
+| mock-10 |  :white_check_mark:   |  :white_check_mark:  |  :white_check_mark:  |
+| mock-11 |  :white_check_mark:   |  :white_check_mark:  |  :white_check_mark:  |
+| mock-12 |  :white_check_mark:   |  :white_check_mark:  |  :white_check_mark:  |
+| mock-13 |  :white_check_mark:   |  :white_check_mark:  |  :white_check_mark:  |
+| mock-14 |  :white_check_mark:   |  :white_check_mark:  |  :white_check_mark:  |
+| mock-15 |  :white_check_mark:   |  :white_check_mark:  |  :white_check_mark:  |
+| mock-16 |  :white_check_mark:   |  :white_check_mark:  |  :white_check_mark:  |
+| mock-17 |  :white_check_mark:   |  :white_check_mark:  |  :white_check_mark:  |
+| mock-18 |  :white_check_mark:   |  :white_check_mark:  |  :white_check_mark:  |
+| mock-19 |  :white_check_mark:   |  :white_check_mark:  |  :white_check_mark:  |
+| mock-20 |  :white_check_mark:   |  :white_check_mark:  |  :white_check_mark:  |
+| mock-21 |  :white_check_mark:   |  :white_check_mark:  |  :white_check_mark:  |
+| mock-22 |  :white_check_mark:   |  :white_check_mark:  |  :white_check_mark:  |
+| mock-23 |  :white_check_mark:   |  :white_check_mark:  |  :white_check_mark:  |
+| mock-24 |  :white_check_mark:   |  :white_check_mark:  |  :white_check_mark:  |
+| mock-25 |  :white_check_mark:   |  :white_check_mark:  |  :white_check_mark:  |
+| mock-26 |  :white_check_mark:   |  :white_check_mark:  |  :white_check_mark:  |
+| mock-27 |  :white_check_mark:   |  :white_check_mark:  |  :white_check_mark:  |
+| mock-28 |  :white_check_mark:   |  :white_check_mark:  |  :white_check_mark:  |
+
+# Original mockrobiota README
 
 [![Build Status](https://travis-ci.org/caporaso-lab/mockrobiota.svg?branch=master)](https://travis-ci.org/caporaso-lab/mockrobiota)
 
