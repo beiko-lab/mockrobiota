@@ -9,9 +9,9 @@ Goals for this fork are to provide an easy entrypoint into the mockrobiota data 
 | Dataset | import/demux | deblur | dada2 |
 |---------|--------|--------|-------|
 | mock-1  | :white_check_mark:    |  :white_check_mark:  |  :white_check_mark:  |
-| mock-2  |  :heavy_check_mark:   |  :white_check_mark:  |  :heavy_check_mark:  |
+| mock-2  |  :heavy_check_mark:   |  :heavy_check_mark:  |  :heavy_check_mark:  |
 | mock-3  |  :heavy_check_mark:   |  :white_check_mark:  |  :white_check_mark:  |
-| mock-4  |  :white_check_mark:   |  :white_check_mark:  |  :white_check_mark:  |
+| mock-4  |  :heavy_check_mark:   |  :heavy_check_mark:  |  :heavy_check_mark:  |
 | mock-5  |  :white_check_mark:   |  :white_check_mark:  |  :white_check_mark:  |
 | mock-6  |  :white_check_mark:   |  :white_check_mark:  |  :white_check_mark:  |
 | mock-7  |  :white_check_mark:   |  :white_check_mark:  |  :white_check_mark:  |
